@@ -96,6 +96,7 @@ Shopping: Browse products, add them to the cart, and proceed to checkout. You ca
 Folder Structure
 plaintext
 Copy code
+
 your-repo-name/
 ├── backend/
 │   ├── config/          # Database and environment configuration
@@ -114,5 +115,6 @@ your-repo-name/
 │   │   ├── App.js       # Main App component
 │   │   └── index.js     # Entry point for React
 └── README.md
+
 License
 This project is open-source and available under the MIT License.
