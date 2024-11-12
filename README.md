@@ -65,10 +65,8 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 PORT=4000
 </code></pre>
-<p>Seed the database (optional):</p>
-<pre><code>npm run seed</code></pre>
 <p>Start the backend server:</p>
-<pre><code>npm run dev</code></pre>
+<pre><code>npm run start</code></pre>
 <p>The backend server should now be running on <span>http://localhost:4000</span>.</p>
 
 <h3>Frontend Setup</h3>
@@ -112,6 +110,14 @@ your-repo-name/
 │   │   ├── pages/       # Page components
 │   │   ├── App.js       # Main App component
 │   │   └── index.js     # Entry point for React
+├── admin/
+│   ├── public/          # Public assets for admin panel
+│   ├── src/
+│   │   ├── components/  # Admin React components
+│   │   ├── context/     # Context API for admin state management
+│   │   ├── pages/       # Admin page components
+│   │   ├── AdminApp.js  # Main Admin App component
+│   │   └── index.js     # Entry point for Admin React
 └── README.md
 </pre>
 
