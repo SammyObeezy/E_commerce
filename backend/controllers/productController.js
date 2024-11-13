@@ -15,6 +15,7 @@ const addProduct = async (req, res) => {
 
         const images = [image1, image2, image3, image4].filter((item) => item !== undefined)
 
+        // Upload images to Cloudinary and gather the URLS
         let imagesUrl = await Promise.all(
             images.map(async (item) => {
                 let result = await cloudinary.uploader.upload(item.path, { resource_type: 'image' });
@@ -22,6 +23,7 @@ const addProduct = async (req, res) => {
             })
         )
 
+        // Prepare the product data
         const productData = {
             name,
             description,
